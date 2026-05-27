@@ -14,7 +14,7 @@
 <body>
 
   <header class="navbar">
-    <div class="logo"><img src="assets/Logo.png"></div>
+    <div class="logo"><img src="assets/Logo.png" alt="Logo"></div>
 
     <nav class="nav-links" id="navLinks">
       <a href="#">Home</a>
@@ -25,21 +25,48 @@
       <a href="#">Contact</a>
     </nav>
 
-    <button class="contact-btn">Contact Us</button>
+    <button class="contact-btn"><img src="assets/Contact-icon.png">Contact Us</button>
 
     <div class="menu" id="menuBtn">
-      ☰
+  ☰
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-top">
+
+    <div class="mobile-logo">
+      <img src="assets/Logo.png">
     </div>
+
+    <span id="closeMenu">✕</span>
+
+  </div>
+
+  <a href="#"><img src="assets/Home.png">Home</a>
+  <a href="#"><img src="assets/AboutUs.png">About Us</a>
+  <a href="#"><img src="assets/Our Services.png">Our Services</a>
+  <a href="#"><img src="assets/Pricing.png">Pricing</a>
+  <a href="#"><img src="assets/FAQ.png">FAQ</a>
+  <a href="#"><img src="assets/contacts.png">Contact</a>
+
+  <button class="mobile-contact-btn">
+    Contact Us
+  </button>
+
+</div>
+
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
 
     <div class="hero-left">
 
       <h1>
-        Simplifying <span>Compliance</span><br>
-        For Research Analysts
+        Simplifying <span class="compliance-txt">Compliance
+          <img src="assets/underline-Vector.png" class="underline-img">
+        </span>
+        For <br>Research Analysts
       </h1>
 
       <p>
@@ -48,9 +75,9 @@
       </p>
 
       <div class="features">
-        <div>✔ End-to-End Compliance Support</div>
-        <div>✔ Regulatory Filings Made Simple</div>
-        <div>✔ Tailored Solutions For Analysts</div>
+        <div><img src="assets/check-sign.png"> End-to-End Compliance Support</div>
+        <div><img src="assets/check-sign.png"> Regulatory Filings Made Simple</div>
+        <div><img src="assets/check-sign.png"> Solutions For Analysts</div>
       </div>
 
       <div class="hero-buttons">
@@ -70,47 +97,49 @@
 
     <div class="why-left">
 
-      <h2>
+      <h2 style="position: relative; display: inline-block; overflow: visible;">
         Why <span>Compliance Matters</span><br>
         For Research Analysts
       </h2>
   
-      <img src="assets/Vector2.png"
-      style="
-        position:relative;
-        width:18px;
-        left:500px;
-        bottom:5px;
-      "
-      >
-
+      <img src="assets/Vector2.png" class="arrow-img">
 
       <img src="assets/Section2-Image.png" alt="Chart" class="chart-arrow">
+      <img src="assets/Vector1.png">
 
     </div>
 
     <div class="why-right">
 
       <p>
-        In today's regulatory environment, even a small oversight can lead
+        In Today's regulatory environment, even a small oversight can lead
         to penalties and reputational risks. We help research analysts and firms
         navigate complex compliance requirements so they can focus on delivering
         high-quality research.
       </p>
 
       <div class="card">
+        <img src="assets/Regulatory Clarity.png">
+        <div class="card-content">
         <h3>Regulatory Clarity</h3>
         <p>We decode complex compliance rules into simple actionable steps.</p>
+        </div>
       </div>
 
       <div class="card">
+        <img src="assets/Hassle-Free Filings Clarity.png">
+        <div class="card-content">
         <h3>Hassle-Free Filings</h3>
         <p>From registrations to ongoing reporting, we manage it efficiently.</p>
+        </div>
       </div>
 
       <div class="card">
+        <img src="assets/Risk Protection.png">
+        <div class="card-content">
         <h3>Risk Protection</h3>
         <p>Stay ahead of audits and compliance gaps with proactive support.</p>
+        </div>
       </div>
 
     </div>

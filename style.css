@@ -13,28 +13,34 @@ body{
 
 .navbar{
   width:100%;
-  padding:15px 8%;
+  padding:22px 7%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background:rgba(255, 255, 255, 0.253);
+  background:#F5F5F5;
 }
 
 .logo{
-  font-size:28px;
-  font-weight:700;
+  font-size:20px;
+  font-weight:500;
   color:#3B4BFF;
+}
+
+.logo img{
+  width:180px;
 }
 
 .nav-links{
   display:flex;
-  gap:30px;
+  gap:55px;
+  align-items: center;
 }
 
 .nav-links a{
   text-decoration:none;
   color:#222;
-  font-size:16px;
+  font-size:18px;
+  font-weight: 500;
 }
 
 .nav-links a:first-child{
@@ -47,25 +53,57 @@ body{
   color:white;
   border:none;
   padding:12px 22px;
-  border-radius:8px;
+  border-radius:10px;
+  font-size: 20px;
+  font-weight: 500;
   cursor:pointer;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+}
+.contact-btn img{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 0px;
+}
+
+button{
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
 }
 
 .hero{
-  padding:70px 8%;
+  padding:30px 5%;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:50px;
+  gap:40px;
+}
+
+.compliance-txt{
+  position:relative;
+  color:#4B57FF;
+  display:inline-block;
+}
+
+.underline-img{
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:100%;
 }
 
 .hero-left{
   flex:1;
+  max-width: 650px;
 }
 
 .hero-left h1{
-  font-size:60px;
-  line-height:60px;
+  font-size:64px;
+  line-height:85px;
+  font-weight: 700;
   margin-bottom:15px;
 }
 
@@ -76,17 +114,23 @@ body{
 .hero-left p{
   font-size:18px;
   line-height:32px;
+  font-weight: 400;
   color:#555;
   margin-bottom:30px;
 }
 
 .features{
-  margin-bottom:30px;
+  margin-bottom:45px;
 }
 
 .features div{
   margin-bottom:12px;
   font-size:18px;
+  font-weight: 500;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .hero-buttons{
@@ -100,6 +144,8 @@ body{
   border:none;
   padding:14px 28px;
   border-radius:8px;
+  font-size: 20px;
+  font-weight: 500;
   cursor:pointer;
 }
 
@@ -109,6 +155,8 @@ body{
   border:2px solid #4B57FF;
   padding:14px 28px;
   border-radius:8px;
+  font-size: 20px;
+  font-weight: 500;
   cursor:pointer;
 }
 
@@ -117,7 +165,8 @@ body{
 }
 
 .hero-right img{
-  width:100%;
+  width:110%;
+  height:100%;
 }
 
 .why-section{
@@ -129,47 +178,71 @@ body{
 
 .why-left{
   flex:1;
+  position: relative;
 }
 
 .why-left h2{
-  font-size:45px;
+  font-size:48px;
   line-height:70px;
+  font-weight: 600;
 }
 
 .why-left span{
   color:#4B57FF;
 }
 
-.chart-image{
+.chart-image,
+.chart-arrow{
   width:100%;
-  max-width:500px;
+  max-width:650px;
   margin-top:40px;
 }
 
-.why-left img{
-  width:100%;
+.arrow-img{
+  position:absolute;
+  right:40px;
+  top:160px;
+  width:18px;
 }
 
 .why-right{
   flex:1;
+  padding-top: 15px;
 }
 
 .why-right p{
   font-size:18px;
   line-height:32px;
+  font-weight: 400;
   color:#555;
   margin-bottom:30px;
 }
 
 .card{
-  background:rgb(236, 237, 238);
+  background:#ECEDEE;
   padding:25px;
   border-radius:14px;
   margin-bottom:20px;
   box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  gap: 24px;
+  align-items: flex-start;
+  display: flex;
+}
+.card img{
+  margin-bottom: 15px;
+  width: 42px;
+  margin-top: 4px;
+}
+.card-content p{
+  font-size:20px;
+  line-height:46px;
+  color:#222;
 }
 
-.card h3{
+.card-content h3{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
   margin-bottom:10px;
 }
 
@@ -179,14 +252,114 @@ body{
   cursor:pointer;
 }
 
-/* Tablet */
+.contact-btn:hover,
+.primary-btn:hover{
+  background:white;
+  color:#4B57FF;
+  border:2px solid #4B57FF;
+
+  transition:0.3s;
+}
+
+.secondary-btn:hover{
+  background:#4B57FF;
+  color:white;
+
+  transition:0.3s;
+}
+
+.card:hover{
+  border:1px solid #4B57FF;
+
+  transform:translateY(-3px);
+
+  transition:0.3s;
+}
+
+.mobile-menu{
+  position:fixed;
+
+  top:0;
+  left:-100%;
+
+  width:260px;
+  height:100vh;
+
+  background:white;
+
+  padding:20px;
+
+  z-index:2000;
+
+  transition:0.4s;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:25px;
+
+  box-shadow:0 0 20px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.active{
+  left:0;
+}
+
+.mobile-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.mobile-top span{
+  font-size:22px;
+  cursor:pointer;
+  color:#4B57FF;
+}
+
+.mobile-menu a{
+  text-decoration:none;
+  color:#111;
+
+  font-size:15px;
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+}
+
+.mobile-menu a:first-of-type{
+  color:#4B57FF;
+}
+
+.mobile-contact-btn{
+  background:#4B57FF;
+  color:white;
+
+  border:none;
+
+  padding:12px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  margin-top:10px;
+}
+
 
 @media(max-width:992px){
 
   .hero{
     flex-direction:column;
+    text-align: left;
   }
 
+  .hero-left,
+  .hero-right{
+    width: 100%;
+  }
   .why-section{
     flex-direction:column;
   }
@@ -196,9 +369,26 @@ body{
     line-height:75px;
   }
 
-}
+  .why-left h2{
+    font-size: 46px;
+    line-height: 60px;
+  }
+  .hero-buttons{
+    gap: 12px;
+  }
 
-/* Mobile */
+  .card h3{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .card{
+    width: 100%;
+  }
+  .logo{
+    font-size: 20px;
+  }
+}
 
 @media(max-width:768px){
 
@@ -212,6 +402,13 @@ body{
     flex-direction:column;
     padding:40px;
     transition:0.4s;
+    z-index: 1000;
+    display: none;
+
+  }
+
+  .navbar{
+    padding: 15px 6%;
   }
 
   .nav-links.active{
@@ -228,11 +425,17 @@ body{
 
   .hero{
     padding:40px 6%;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .hero-left h1{
     font-size:38px;
     line-height:48px;
+  }
+  .hero-left p{
+    font-size:16px;
+    line-height:28px;
   }
 
   .why-left h2{
@@ -241,7 +444,46 @@ body{
   }
 
   .hero-buttons{
-    flex-direction:column;
+    flex-direction:row;
+    gap: 10px;
   }
 
+  .card h3{
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .logo{
+    font-size: 19px;
+  }
+
+  .features div{
+    font-size:15px;
+  }
+
+   .primary-btn,
+  .secondary-btn{
+    padding:10px 16px;
+
+    font-size:14px;
+  }
+
+  .why-section{
+    flex-direction:column;
+
+    padding:50px 6%;
+  }
+
+  .why-right p{
+    font-size:15px;
+    line-height:28px;
+  }
+
+ .card{
+    padding:18px;
+  }
+ .card p{
+    font-size:14px;
+    line-height:24px;
+  }
 }
