@@ -8,15 +8,16 @@ body{
   font-family:'Roboto',sans-serif;
   background:#F5F5F5;
   color:#111;
+  overflow-x: hidden;
 }
 
 .navbar{
   width:100%;
-  padding:20px 8%;
+  padding:15px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background:white;
+  background:rgba(255, 255, 255, 0.253);
 }
 
 .logo{
@@ -34,6 +35,11 @@ body{
   text-decoration:none;
   color:#222;
   font-size:16px;
+}
+
+.nav-links a:first-child{
+  color:#4B57FF;
+  font-weight:500;
 }
 
 .contact-btn{
@@ -58,9 +64,9 @@ body{
 }
 
 .hero-left h1{
-  font-size:64px;
-  line-height:85px;
-  margin-bottom:20px;
+  font-size:60px;
+  line-height:60px;
+  margin-bottom:15px;
 }
 
 .hero-left h1 span{
@@ -118,6 +124,7 @@ body{
   padding:70px 8%;
   display:flex;
   gap:50px;
+  background-color: white;
 }
 
 .why-left{
@@ -125,13 +132,18 @@ body{
 }
 
 .why-left h2{
-  font-size:48px;
+  font-size:45px;
   line-height:70px;
-  margin-bottom:30px;
 }
 
 .why-left span{
   color:#4B57FF;
+}
+
+.chart-image{
+  width:100%;
+  max-width:500px;
+  margin-top:40px;
 }
 
 .why-left img{
@@ -150,7 +162,7 @@ body{
 }
 
 .card{
-  background:white;
+  background:rgb(236, 237, 238);
   padding:25px;
   border-radius:14px;
   margin-bottom:20px;
